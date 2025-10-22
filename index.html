@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube BI Dashboard Demo</title>
+    <!-- Loads Tailwind CSS for easy, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a clean, professional look */
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fb; }
+        .shadow-custom { box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08); }
+        .btn-primary {
+            transition: all 0.2s ease-in-out;
+        }
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(79, 70, 229, 0.4); /* Tailwind indigo-600 shadow */
+        }
+        .text-indigo-600 {
+            color: #4f46e5;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-custom p-6 md:p-10">
+
+        <!-- Header -->
+        <header class="text-center mb-8 md:mb-12">
+            <h1 class="text-3xl md:text-5xl font-extrabold text-gray-800 mb-2">
+                YouTube BI Dashboard Showcase 📈
+            </h1>
+            <p class="text-lg text-gray-500">
+                Interactive Analysis of Global Channel Performance using Power BI
+            </p>
+        </header>
+
+        <!-- Call to Action / Downloads -->
+        <div class="flex flex-col md:flex-row justify-center gap-4 mb-10">
+            <!-- Link to download the PBIX file (Ensure the file name matches your upload) -->
+            <a href="Lakshmi_PowerBI_Project_Report.pbix" download class="w-full md:w-auto px-6 py-3 text-center bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 btn-primary transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline w-5 h-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 11.586V3a1 1 0 112 0v8.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+                Download Power BI File (.pbix)
+            </a>
+            <!-- Link to view the static PDF report (Ensure the file name matches your upload) -->
+            <a href="Lakshmi_PowerBI_Project_Report.pdf" target="_blank" class="w-full md:w-auto px-6 py-3 text-center bg-gray-200 text-gray-700 font-semibold rounded-lg hover:bg-gray-300 transition duration-300">
+                View Static PDF Report
+            </a>
+        </div>
+
+        <!-- Dashboard Gallery -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-gray-800 border-b pb-2 mb-6">Key Dashboard Visuals</h2>
+            <p class="text-sm text-gray-500 mb-6">
+                *The links below require you to upload your three dashboard screenshots (`.png` files) to the same folder!*
+            </p>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                <!-- Visual 1: KPI Summary -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <h3 class="font-semibold text-lg text-indigo-600 mb-3">1. KPI Summary & Max Uploads</h3>
+                    <!-- Image Name Check: dashboard_screenshot_1.png -->
+                    <img src="dashboard_screenshot_1.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/D1D5DB/1F2937?text=KPI+Screenshot';" alt="KPI Dashboard Summary" class="w-full h-auto rounded-lg border-2 border-indigo-200 object-cover">
+                    <p class="mt-2 text-sm text-gray-500">Displays key metrics like Maximum Uploads (301K) and Minimum View Ranks (1).</p>
+                </div>
+
+                <!-- Visual 2: Channel Performance -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <h3 class="font-semibold text-lg text-indigo-600 mb-3">2. Channel Type Performance Analysis</h3>
+                    <!-- Image Name Check: dashboard_screenshot_2.png -->
+                    <img src="dashboard_screenshot_2.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/D1D5DB/1F2937?text=Performance+Analysis';" alt="Channel Performance Dashboard" class="w-full h-auto rounded-lg border-2 border-indigo-200 object-cover">
+                    <p class="mt-2 text-sm text-gray-500">Focuses on views vs. subscriber correlation across different channel types.</p>
+                </div>
+
+                <!-- Visual 3: Trends/Cleansing -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <h3 class="font-semibold text-lg text-indigo-600 mb-3">3. Upload Leaderboard & Trend Insights</h3>
+                    <!-- Image Name Check: dashboard_screenshot_3.png -->
+                    <img src="dashboard_screenshot_3.png" onerror="this.onerror=null;this.src='https://placehold.co/600x400/D1D5DB/1F2937?text=Upload+Leaderboard';" alt="Growth Trends Visual" class="w-full h-auto rounded-lg border-2 border-indigo-200 object-cover">
+                    <p class="mt-2 text-sm text-gray-500">Highlights the channels with the highest total uploads and recent performance trends.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Technical Summary -->
+        <section class="pt-6 border-t border-gray-200">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Technical Snapshot</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-gray-600">
+                <div>
+                    <p class="font-semibold text-gray-700">BI Platform:</p>
+                    <p>Power BI Desktop</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700">Core Skills:</p>
+                    <p>DAX Measures, Power Query (ETL)</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-700">Documentation:</p>
+                    <p>Full technical and insights write-up in README.md</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center mt-10 pt-4 border-t text-sm text-gray-500">
+            This demo is powered by GitHub Pages. Check the repository for the source files and documentation.
+        </footer>
+
+    </div>
+</body>
+</html>
