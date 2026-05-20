@@ -1,111 +1,114 @@
-# YouTube-Channel-Analysis-PowerBI
-Interactive dashboard on global YouTube channel performance using data visualization (Power BI).
+# YouTube Channel Performance Dashboard
 
-📊 YouTube Data Analysis & Business Intelligence Dashboard 📈
+[![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
+[![Power Query](https://img.shields.io/badge/Power%20Query-217346?style=flat&logo=microsoft&logoColor=white)](https://powerbi.microsoft.com/)
+[![DAX](https://img.shields.io/badge/DAX-0078D4?style=flat&logo=microsoft&logoColor=white)](https://powerbi.microsoft.com/)
 
-Project Summary: A comprehensive, interactive dashboard developed in Power BI to analyze global YouTube channel performance, including uploads, view ranks, subscriber growth, and channel type demographics. This project demonstrates proficiency in data transformation (Power Query), DAX calculations, and impactful data storytelling.
+---
 
-Key Technologies: 🖥️ Power BI Desktop, ⚙️ Power Query (M Language), 🧮 DAX (Data Analysis Expressions)
-Primary Dataset: 🌐 Global YouTube Channel Data (including uploads, views, subscribers, and ranks)
-Purpose: 🎯 Deliver actionable insights on channel performance and content strategy.
-Status: ✅ Complete (Includes PBIX file and Exported Report)
+## Project Overview
 
-**1. Project Overview 🌟**
+Built a 3-page interactive Power BI dashboard analyzing global YouTube channel performance across uploads, views, subscribers, and channel type demographics.
 
-This project served as a capstone to deliver a production-ready Business Intelligence solution. The primary goal was to transform raw YouTube metrics into a set of interactive visualizations that answer critical business questions about success factors on the platform. The solution emphasizes dashboard design best practices, robust data cleansing, and the creation of custom performance metrics using DAX.
+- Total uploads analyzed: **9M+**
+- Maximum uploads by channel: **301K**
+- Average views tracked: **169.33M**
+- Minimum view rank: **1**
+- Channel types analyzed: **14**
+- Top category by subscribers: **Entertainment (6.26bn)**
+- Second category by subscribers: **Music (5.20bn)**
 
-**2. Key Features 🔑**
+> This project was completed as a Capstone Project under the Advanced Certification in Data Science and AI — IIT Roorkee and Intellipaat.
 
-➡️ Interactive Dashboards: Implemented cross-filtering and drill-through capabilities across multiple pages for dynamic analysis. 🖱️
+---
 
-➡️ Custom DAX Metrics: Calculated essential KPIs such as Average Views, Minimum View Ranks, and metrics for Channel Views by Subscriber Ratio. 🧮
+## Tools and Technologies
 
-➡️ Data Cleansing Pipeline: Used Power Query to handle data quality issues, including cleansing and transforming time-series data to calculate rolling averages (e.g., Average Views for the Last 30 Days). 🧼
+| Tool | Purpose |
+|------|---------|
+| Power BI Desktop | Dashboard design and report publishing |
+| Power Query (M Language) | Data cleaning and ETL process |
+| DAX (Data Analysis Expressions) | Custom metrics and calculated columns |
 
-➡️ Visual Storytelling: Designed the report with clear visual hierarchy, consistent color palettes, and appropriate visual types (e.g., Card visuals for KPIs, Bar charts for channel comparisons). 🎨
+---
 
-**3. Business Questions Answered 💡**
+## Dataset
 
-The dashboard provides answers to key strategic questions:
+- Name: Global YouTube Statistics
+- Content: Channel name, type, upload count, video views, subscriber counts, and rank data
+- Files: Global YouTube Statistics.csv (raw) and Cleaned Global YouTube Statistics.csv (processed)
 
-Performance Extremes: What are the maximum uploads and minimum view ranks across the dataset?
-Channel Performance: How do views and subscriber counts correlate across different channel types (e.g., News vs. Entertainment)?
-Growth Trends: What are the average views for the most recent period, showing immediate performance?
-Upload Leaderboard: Which specific channels have the highest total uploads?
+---
 
-**4. Technical Implementation 💻**
+## Folder Structure
 
-   Technologies Used
+- Cleaned Global YouTube Statistics.csv — Processed dataset
+- Global YouTube Statistics.csv — Raw dataset
+- Lakshmi PowerBI Project Report.pbix — Power BI dashboard file
+- Lakshmi PowerBI Project Report.pdf — Static PDF export of dashboard
+- Capstone Project Document.pdf — Project documentation
+- README.md — Project description
 
-   👉 Platform: 🖥️ Power BI Desktop
-   
-   👉 Data Modeling: Star Schema / Normalized Data Model (as applicable)
-   
-   👉 Data Transformation: Power Query (Extract, Transform, Load processes)
+---
 
- Dataset
+## Key Steps
 
-  Name: Top Global YouTubers Data.
+**1. Data Cleaning (Power Query)**
+- Cleaned headers and enforced correct data types
+- Handled missing and inconsistent values
+- Created calculated columns for time based analysis
 
-  Characteristics: Structured data containing metrics like channel name, type, upload count, video views, subscriber counts, and historical rank data.
+**2. DAX Calculations**
+- Created Views per Subscriber calculated column
+- Built measures for Average Views, Maximum Uploads, and Minimum View Ranks
+- Developed channel type performance aggregations
 
-Methodology
+**3. Dashboard Design (3 Pages)**
 
-  ✅ Data Acquisition: Connected Power BI to the raw data source.
-  
-  ✅ Data Transformation (Power Query): Applied necessary steps to clean headers, enforce data types, and create calculated columns for time-based analysis. 🧼
-  
-  ✅ Data Modeling: Defined relationships between tables (if multiple tables were used) and managed data cardinality.
-  
-  ✅ DAX Calculations: Wrote complex measures to aggregate, filter, and calculate custom metrics.
-  
-  ✅ Report Design: Developed three primary report pages, ensuring responsiveness and user experience. 📊
+Page 1 — Upload and Performance Overview
+- KPI cards for Total Uploads (9M), Maximum Uploads (301K), Minimum View Ranks (1), Average Views (169.33M)
+- Line chart showing top channels that crossed 2 lakh uploads
+- Channel views by subscriber table across all channel types
 
-**5. Key Insights & Findings 📖**
+Page 2 — Category Rankings
+- Rank wise category analysis showing Entertainment (287 channels) and Music (202 channels) as top categories
+- Interactive navigation buttons between pages
 
-  🌟 Top Channel Types: Identified the channel types that generated the highest total views per subscriber, suggesting which categories offer the highest audience engagement.
+Page 3 — Subscriber and Channel Type Analysis
+- Bubble chart showing subscribers by category — Entertainment (6.26bn) and Music (5.20bn) as leaders
+- Radar chart showing channel type rank distribution across 14 categories
 
-  🌟 Upload vs. Views: Analyzed the relationship between upload frequency and video performance metrics.
+---
 
-  🌟 KPI Performance: Presented core metrics (Max Uploads: 301K, Min View Rank: 1) prominently for immediate business assessment.
+## Key Insights
 
-**6. How to View ⚙️**
+- Entertainment is the highest engagement category with 149,081 views per subscriber
+- Entertainment leads in total subscribers (6.26bn across 287 channels)
+- Music is second with 5.20bn subscribers across 202 channels
+- News channels dominate upload counts but have lower subscriber engagement
+- Views per subscriber ratio reveals which categories offer highest audience loyalty
 
-  👉 Option 1: Live Demo (Recommended):
+---
 
-   Click the "Launch Dashboard Demo" button on the GitHub Pages link (once enabled) to view a static gallery of the key visuals.
+## Business Impact
 
-  👉 Option 2: Download the PBIX:
+- Helps content creators identify high performing categories for channel growth
+- Supports strategic decisions on content type and upload frequency
+- Reveals which channel types generate highest subscriber engagement
+- Enables data driven content strategy planning based on global trends
 
-   Download the Lakshmi_PowerBI_Project_Report.pbix file from this repository and open it using Power BI Desktop to interact with the full dashboard.
+---
 
-  👉 Option 3: View Static PDF:
+## How to View
 
-   Refer to the Lakshmi_PowerBI_Project_Report.pdf file in this repository for a static view of the final report pages.
+- Download the Lakshmi PowerBI Project Report.pbix file and open in Power BI Desktop
+- View the static Lakshmi PowerBI Project Report.pdf for a quick overview without Power BI
 
-**7. File Structure 📂**
+---
 
-.
-├── Lakshmi_PowerBI_Project_Report.pbix  # The main Power BI project file (full report & logic)
-├── Lakshmi_PowerBI_Project_Report.pdf  # Static PDF export of the final report
-├── README.md                            # Project documentation (This file)
-└── index.html                           # Live GitHub Pages demo launcher
+## Author
 
+**Lakshmi Bhavani Reddy**
 
-
-**8. Future Enhancements ✨**
-
-  💡 Web Embedding: Embed the final report using Power BI Service into a public webpage or portfolio site for instant viewing. 🌐
-
-  💡 Advanced DAX: Implement time intelligence functions (Year-over-Year growth, Moving Averages) to provide deeper trend analysis.
-
-  💡 Row-Level Security (RLS): Apply RLS if the data were to be deployed to ensure different users see only relevant regional or channel data.
-
-**9. Author ✍️**
-
-Lakshmi Bhavani Reddy
-
-lakshmibhavani071200@gmail.com | https://www.linkedin.com/in/lakshmibhavanireddy37/
-
-
-This project demonstrates the practical application of Business Intelligence tools in data storytelling, showcasing end-to-end data analysis workflow from data ingestion and modeling to delivering actionable business insights.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lakshmibhavanireddy37/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/lakshmibhavani7)
